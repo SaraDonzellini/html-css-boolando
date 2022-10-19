@@ -8,6 +8,10 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main{
+  position: relative;
+}
+
 .flex{
   display: flex;
 }
@@ -30,12 +34,69 @@ body{
   text-decoration: line-through;
 }
 
+.discount-50{
+  background-color: red;
+  color: white;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+}
+
+.sustainable{
+  background-color: green;
+  color: white;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+
+.sustainable-only{
+  background-color: green;
+  color: white;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+}
+
+.heart{
+  padding: 0.5rem 1rem;
+  position:absolute;
+  top:3%;
+  right: 0%;
+  font-size: xx-large;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.heart:hover{
+  color:red;
+}
+
+.none{
+  max-width: 300px;
+  display:none;
+  z-index: 1;
+}
+
+.change:hover .none{
+  display: block;
+}
+
+.change:hover .vanish{
+  display: none;
+}
+
 header{
   background-color: #ff6900;
   color: white;
   height: 3rem;
-  /* position: fixed; */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  width: 100%;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
 }
 
 nav{
@@ -77,6 +138,10 @@ section.p-row{
   width:300px;
 } */
 
+div.img{
+  position: relative;
+}
+
 div.img img{
   max-width: 300px;
 }
@@ -93,4 +158,9 @@ section.foot{
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 1rem;
+}
+
+div.footer a{
+  font-size: small;
+  padding: 0 .25rem 0 0;
 }
