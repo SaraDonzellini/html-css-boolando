@@ -8,3 +8,30 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.flex{
+  display: flex;
+}
+
+.flex-centered{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+header{
+  background-color: #ff6900;
+  height: 3rem;
+  position: fixed;
+}
+
+nav{
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 0.75rem;
+}
+
+div{
+  border: 2px dashed black;
+  background-color: aquamarine;
+}
