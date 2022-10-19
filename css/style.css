@@ -21,7 +21,8 @@ body{
 header{
   background-color: #ff6900;
   height: 3rem;
-  position: fixed;
+  /* position: fixed; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 }
 
 nav{
@@ -34,4 +35,30 @@ nav{
 div{
   border: 2px dashed black;
   background-color: aquamarine;
+}
+
+section.p-row{
+  width: 80%;
+  justify-content: space-around;
+  padding-top: 6rem;
+  margin: 0 auto;
+}
+
+section.p-row div{
+  height: 500px;
+  width:300px;
+
+}
+
+footer{
+  height: 4rem;
+  background-color: #1a1a1a;
+  margin-top: 5rem;
+}
+
+section.foot{
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
