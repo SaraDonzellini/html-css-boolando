@@ -8,10 +8,6 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-  position: relative;
-}
-
 .flex{
   display: flex;
 }
@@ -20,6 +16,51 @@ main{
   display: flex;
   /* justify-content: center; */
   align-items: center;
+}
+
+
+/* header section */
+
+
+header{
+  background-color: #ff6900;
+  color: white;
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+}
+
+nav{
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 0.75rem;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+img.logo{
+  height: 1.5rem;
+}
+
+/* main section */
+
+section.p-row{
+  width: 80%;
+  justify-content: space-around;
+  padding-top: 6rem;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .bold{
@@ -61,6 +102,8 @@ main{
   left: 0%;
 }
 
+/* heart red */
+
 .heart{
   padding: 0.5rem 1rem;
   position:absolute;
@@ -75,6 +118,8 @@ main{
   color:red;
 }
 
+/* photo change */
+
 .none{
   max-width: 300px;
   display:none;
@@ -82,61 +127,14 @@ main{
 }
 
 .change:hover .none{
-  display: block;
+  display: inline;
 }
 
 .change:hover .vanish{
   display: none;
 }
 
-header{
-  background-color: #ff6900;
-  color: white;
-  height: 3rem;
-  width: 100%;
-  position: fixed;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  z-index: 2;
-}
 
-nav{
-  width: 80%;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 0.75rem;
-}
-
-a{
-  color: white;
-  text-decoration: none;
-  
-}
-
-a:hover{
-  text-decoration: underline;
-}
-
-img.logo{
-  height: 1.5rem;
-}
-
-/* div{
-  border: 2px dashed black;
-  background-color: aquamarine;
-} */
-
-section.p-row{
-  width: 80%;
-  justify-content: space-around;
-  padding-top: 6rem;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-/* section.p-row div{
-  height: 500px;
-  width:300px;
-} */
 
 div.img{
   position: relative;
@@ -145,6 +143,8 @@ div.img{
 div.img img{
   max-width: 300px;
 }
+
+/* footer section */
 
 footer{
   color: white;
